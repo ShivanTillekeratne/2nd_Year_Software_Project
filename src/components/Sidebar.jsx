@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div className="h-full w-52 bg-blue-900 text-white fixed left-0 top-0 bottom-0 flex flex-col shadow-md shadow-blue-950">
       <div className="p-4">
         <div className="flex items-center mb-8">
-          <h1 className="text-xl font-bold ml-4">MyApp</h1>
+          <h1 className="text-xl font-bold ml-4">Medical Claims Fraud Detection</h1>
           {/* <img src={logo} alt="Logo" className="h-8 w-8 mr-2 ml-3.5" /> */}
         </div>
         <Link to="/" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/')}`}>
