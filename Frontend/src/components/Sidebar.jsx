@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../resources/logo.png';
 import profilePic from '../resources/profile-pic.jpg';
 
 const Sidebar = () => {
@@ -21,17 +20,17 @@ const Sidebar = () => {
     <div className="h-full w-52 bg-blue-900 text-white fixed left-0 top-0 bottom-0 flex flex-col shadow-md shadow-blue-950">
       <div className="p-4">
         <div className="flex items-center mb-8">
-          <h1 className="text-xl font-bold ml-4">Medical Claims Fraud Detection</h1>
+          <h1 className="text-xl font-bold ml-4">MyApp</h1>
           {/* <img src={logo} alt="Logo" className="h-8 w-8 mr-2 ml-3.5" /> */}
         </div>
         <Link to="/" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/')}`}>
           Dashboard
         </Link>
-        <Link to="/anomalies" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/anomalies')}`}>
-          Anomalies
+        <Link to="/customerdata" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/customerdata')}`}>
+          Customer Data
         </Link>
-        <Link to="/reports" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/reports')}`}>
-          Reports
+        <Link to="/addinvestigators" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/addinvestigators')}`}>
+          Add Investigators
         </Link>
       </div>
       {/* User Profile Section */}
