@@ -27,7 +27,7 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Cretaio API",
         default_version='v1',
-        description="My API description",
+        description="REST API for the AI assisted Medical Insurance Fraud Detection System to integrate with the 3rd party Creatio software.",
         terms_of_service="https://www.example.com/terms/",
         contact=openapi.Contact(email="contact@example.com"),
         license=openapi.License(name="Awesome License"),
