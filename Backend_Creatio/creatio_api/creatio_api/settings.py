@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     #other apps...
     'drf_yasg',
+    'creatio',
 ]
 
 SWAGGER_SETTINGS = {
