@@ -3,7 +3,10 @@
 import React, { useState } from 'react';
 import NavbarLogin from '../components/NavbarLogin'; // Adjust the import path as needed
 import Footer from '../components/Footer'; // Ensure the path is correct
+<<<<<<< HEAD:src/pages/Login.jsx
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+=======
+>>>>>>> 78cbd3a52ac655ce8d73166c8154d547b13838a3:Frontend/src/pages/Login.jsx
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -54,7 +57,10 @@ const LoginPage = () => {
             />
           </div>
           <div className="flex justify-between items-center">
+<<<<<<< HEAD:src/pages/Login.jsx
             <Link to="/register" className="text-sm text-blue-500 hover:text-blue-700">Register</Link>
+=======
+>>>>>>> 78cbd3a52ac655ce8d73166c8154d547b13838a3:Frontend/src/pages/Login.jsx
             <a href="#forgot-password" className="text-sm text-blue-500 hover:text-blue-700">Forgot password?</a>
             <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
               Login
