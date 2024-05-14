@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../resources/logo.png';
 import profilePic from '../resources/profile-pic.jpg';
 
 const Sidebar = () => {
@@ -27,11 +26,11 @@ const Sidebar = () => {
         <Link to="/" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/')}`}>
           Dashboard
         </Link>
-        <Link to="/anomalies" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/anomalies')}`}>
-          Anomalies
+        <Link to="/customerdata" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/customerdata')}`}>
+          Customer Data
         </Link>
-        <Link to="/reports" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/reports')}`}>
-          Reports
+        <Link to="/addinvestigators" className={`block py-4 px-4 mb-2 rounded hover:bg-blue-950 hover:border-blue-600 ${getButtonColor('/addinvestigators')}`}>
+          Add Investigators
         </Link>
       </div>
       {/* User Profile Section */}
