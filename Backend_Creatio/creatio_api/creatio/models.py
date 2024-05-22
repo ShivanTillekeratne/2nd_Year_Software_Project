@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Claim(models.Model):
     customer_id = models.IntegerField()
     amount = models.DecimalField(max_digits=10, decimal_places=2)

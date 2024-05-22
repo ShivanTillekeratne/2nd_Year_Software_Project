@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-
-# Create your views here.    
+    
 from rest_framework.views import APIView
 from rest_framework import status
 from .models import Claim, Customer, FraudulentClaim
@@ -49,7 +48,7 @@ class SocialNetworkAnalysis(APIView):
         try:
             customer = Customer.objects.get(id=customer_id)
             # Perform social network analysis using Facebook API
-            # This is just an example, you need to replace it with actual Facebook API integration code
+            # This is just an example, need to replace it with actual Facebook API integration code
             graph = facebook.GraphAPI(access_token='YOUR_FACEBOOK_ACCESS_TOKEN', version='2.12')
             insights = graph.get_object(id='me', fields='id,name,insights.metric(post_impressions,period(lifetime))')
             analysis_results = {'data': 'Sample analysis results'}
