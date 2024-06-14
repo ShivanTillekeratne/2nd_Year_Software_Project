@@ -16,11 +16,6 @@ class CustomerSerializer(serializers.ModelSerializer):
         model = Customer
         fields = ['id', 'name', 'email', 'claims']
 
-
-class SocialNetworkAnalysisSerializer(serializers.Serializer):
-    insights = serializers.JSONField()
-    analysis_results = serializers.JSONField()
-
 class FraudulentClaimSerializer(serializers.ModelSerializer):
     class Meta:
         model = FraudulentClaim
