@@ -1,0 +1,56 @@
+{
+    "timestamp": "2024-06-25T20:11:10.666462",
+    "filters": {
+        "claim_ids": "9c61ee5b-ce84-43c5-b8a8-dd9cd5b5dedb"
+    },
+    "results": [
+        {
+            "claim_id": "73c16dd5-2c37-48de-8144-dc6031ad658f",
+            "claimant_id": "CIUB1",
+            "provider_id": "ZZ2PP",
+            "status": "Invalid",
+            "reasons": [
+                "Billed amount 8247.6 exceeds 1.5 times allowed amount 4665.38."
+            ],
+            "is_fraud": null
+        },
+        {
+            "claim_id": "fd713a2d-11ab-470d-acb6-a975868ab934",
+            "claimant_id": "NGN1F",
+            "provider_id": "ORCDP",
+            "status": "Invalid",
+            "reasons": [
+                "Billed amount 2953.99 exceeds 1.5 times allowed amount 1487.17."
+            ],
+            "is_fraud": null
+        },
+        {
+            "claim_id": "06949272-c152-4e53-a89b-390d62dda712",
+            "claimant_id": "REMEX",
+            "provider_id": "PFDQ5",
+            "status": "Valid",
+            "reasons": [],
+            "is_fraud": true
+        },
+        {
+            "claim_id": "b02c9590-6e0e-4de8-80ad-413f9ed6ad9f",
+            "claimant_id": "3UR6N",
+            "provider_id": "7DWHF",
+            "status": "Invalid",
+            "reasons": [
+                "Billed amount 3542.79 exceeds 1.5 times allowed amount 1855.49."
+            ],
+            "is_fraud": null
+        },
+        {
+            "claim_id": "9c61ee5b-ce84-43c5-b8a8-dd9cd5b5dedb",
+            "claimant_id": "54PL0",
+            "provider_id": "HEBCE",
+            "status": "Invalid",
+            "reasons": [
+                "Billed amount 3272.36 exceeds 1.5 times allowed amount 2064.75."
+            ],
+            "is_fraud": null
+        }
+    ]
+}
