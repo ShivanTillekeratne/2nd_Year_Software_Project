@@ -5,9 +5,11 @@ import CustomerData from './pages/CustomerData';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AddInvestigators from './pages/AddInvestigators';
-import Results from './pages/Results'; // Import the new page
+import Results from './pages/Results';
 import PrivateRoute from './components/PrivateRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 import Reports from './pages/Reports';
+import Unauthorized from './pages/Unauthorized';
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
           path="/addinvestigators" 
           element={
             <PrivateRoute>
-              <AddInvestigators />
+              <ProtectedRoute requiredRole="AD">
+                <AddInvestigators />
+              </ProtectedRoute>
             </PrivateRoute>
           } 
         />
@@ -51,10 +55,13 @@ function App() {
           path="/reports" 
           element={
             <PrivateRoute>
-              <Reports />
+              <ProtectedRoute requiredRole="AD">
+                <Reports />
+              </ProtectedRoute>
             </PrivateRoute>
           } 
         />
+        <Route path="/unauthorized" element={<Unauthorized />} />
       </Routes>
     </Router>
   );
